@@ -1,29 +1,30 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
-import './Login.css'
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Login.css";
 
 function Login() {
-  const [emailInput, setEmailInput] = useState('');
-  const [passwordInput, setPasswordInput] = useState('');
+  const [emailInput, setEmailInput] = useState("");
+  const [passwordInput, setPasswordInput] = useState("");
   const navigate = useNavigate();
-
 
   const handleLoginSubmit = (e) => {
     e.preventDefault();
     let hardcodedAuth = {
-      email: 'admin@mail.com',
-      password: '12345'
-    }
+      email: "admin@mail.com",
+      password: "12345",
+    };
 
-    if ((emailInput === hardcodedAuth.email) && (passwordInput === hardcodedAuth.password)) {
-      console.log("yes")
-      navigate('/create-student')
+    if (
+      emailInput === hardcodedAuth.email &&
+      passwordInput === hardcodedAuth.password
+    ) {
+      console.log("yes");
+      navigate("/create-student");
     } else {
-      alert('wrong email or password combination');
+      alert("wrong email or password combination");
     }
-  }
+  };
 
-  // const history = useHistory();
   return (
     <div className="box">
       <div className="login-page">
