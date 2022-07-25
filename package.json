@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "cd ./client && npm start",
-    "serveDev": "cd ./server && npm run watch"
+    "devServer": "cd ./server && npm run watch"
   },
   "repository": {
     "type": "git",
