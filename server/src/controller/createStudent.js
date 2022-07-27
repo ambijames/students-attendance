@@ -33,5 +33,9 @@ async function createStudent(req, res) {
     });
   }
 }
-
-module.exports = { createStudent };
+function getMessage(req, res) {
+  res.status(200).json({
+    message: "server deployed suceeded",
+  });
+}
+module.exports = { createStudent, getMessage };
