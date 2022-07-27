@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 const CreateStudent = () => {
     const [studentFields, setStudentFields] = useState([{
@@ -10,18 +10,18 @@ const CreateStudent = () => {
             <h1>Create A student</h1>
             <form>
                 <div>
-                <input
-                    name='name'
-                    placeholder='Name'
-                />
-                <input
-                    name='active'
-                    placeholder='Is Present?'
-                />
+                    <input
+                        name='name'
+                        placeholder='Name'
+                    />
+                    <input
+                        name='active'
+                        placeholder='Is Present?'
+                    />
                 </div>
             </form>
         </>
-        
+
     )
 }
 
