@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "cd ./client && npm start",
     "devServer": "cd ./server && npm run watch",
-    "install": "cd ./server && npm install & cd ./client && npm install",
-    "deploy": "cd ./server && npm start & cd ./client && npm run build",
+    "install": "cd ./server && npm install & cd ./client && npm install -g serve",
+    "deploy": "cd ./server && npm start & cd ./client && serve -s build",
     "start": "npm install & npm run deploy"
   },
   "repository": {
