@@ -8,7 +8,7 @@
     "devServer": "cd ./server && npm run watch",
     "install": "cd ./server && npm install & cd ./client && npm install",
     "deploy": "cd ./server && npm start & cd ./client && npm start",
-    "start": "npm install & npm deploy"
+    "start": "npm install & npm run deploy"
   },
   "repository": {
     "type": "git",
