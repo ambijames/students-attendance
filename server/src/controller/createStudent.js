@@ -38,4 +38,12 @@ function getMessage(req, res) {
     message: "server deployed suceeded",
   });
 }
+
+// async function getStudent(req, res) {
+// const student = await Student.find({  });
+// res.status(200).json({
+// message: "sucessful",
+// data: student,
+// });
+// }
 module.exports = { createStudent, getMessage };
