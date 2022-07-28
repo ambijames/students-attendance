@@ -1,5 +1,6 @@
 .background-overlay{
- background: rgb(222, 15, 15);
+ background: rgba(222, 15, 15, 0.44);
+ /* background: rgb(222, 15, 15); */
  width: 100%;
  margin-bottom: 1rem;
 }
@@ -7,6 +8,7 @@
  opacity: 0.5;
  width: 100%;
  max-height: 55vh;
+ object-fit: cover;
 }
 
 
