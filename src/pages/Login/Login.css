@@ -1,0 +1,48 @@
+.box {
+    /* background-color: azure; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-page {
+    /* background-color: cadetblue; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.form {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem;
+}
+
+.form-group {
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+
+.form-control {
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.btn{
+    width: 47%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: brown;
+    cursor: pointer;
+}

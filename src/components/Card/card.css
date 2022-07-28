@@ -1,0 +1,11 @@
+button{
+    background-color: brown;
+    border-radius: 3px;
+    color: azure;
+}
+
+.toggle {
+    align-items: center;
+    margin-left: 30%;
+
+}
