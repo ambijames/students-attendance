@@ -37,7 +37,9 @@ const data = [
 
 
 function CreateStudent(props) {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
+
+  
 
 
 
