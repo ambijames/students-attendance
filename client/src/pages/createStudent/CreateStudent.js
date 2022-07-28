@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "./createStudent.css";
@@ -37,12 +37,16 @@ const data = [
 
 
 function CreateStudent(props) {
+  const [show, setShow] = useState(false)
+
+
+
   return (
     <>
     <Navigation />
       <div className="" style={{ padding: '1rem', }}>
 
-        <button style={{ fontSize: '1rem', padding: '2rem 2rem', }}>
+        <button style={{ fontSize: '1rem', padding: '2rem 2rem', cursor: 'pointer' }} onClick={() => setShow(true)}>
           +Add new student
         </button>
 
@@ -57,31 +61,36 @@ function CreateStudent(props) {
       </div>
 
 
-      <div style={{ position: 'fixed', background: 'rgba(0,0,0,0.6)', width: '100vw', height: '100vh', top: 0, left: 0, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <form className="side-2" onSubmit={() => {}}>
-            <div className="input">
-                <input
-                className="form-control"
-                name="fullName"
-                placeholder="fullName"
-                value={''}
-                onChange={''}
-              />
-              <input
-                name="email"
-                className="form-control"
-                placeholder="Email"
-                value={''}
-                onChange={""}
-              />
-              <div style={{ width: "100%" }}>
-                <button className="form-control" type="submit">
-                  Create Student
-                </button>
-              </div>
+        {
+          show && 
+            <div style={{ position: 'fixed', background: 'rgba(0,0,0,0.6)', width: '100vw', height: '100vh', top: 0, left: 0, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+              <form className="side-2"  style={{padding: '2rem'}} onSubmit={() => {}}>
+                  <p className="" onClick={() => setShow(false)} style={{cursor: 'pointer'}}>close</p>
+                  <div className="input">
+                      <input
+                      className="form-control"
+                      name="fullName"
+                      placeholder="fullName"
+                      value={''}
+                      onChange={''}
+                    />
+                    <input
+                      name="email"
+                      className="form-control"
+                      placeholder="Email"
+                      value={''}
+                      onChange={""}
+                    />
+                    <div style={{ width: "100%" }}>
+                      <button className="form-control" type="submit">
+                        Create Student
+                      </button>
+                    </div>
+                  </div>
+                </form>
             </div>
-          </form>
-      </div>
+        }
+
     </>
   )
 }
