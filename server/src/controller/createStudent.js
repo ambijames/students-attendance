@@ -33,5 +33,17 @@ async function createStudent(req, res) {
     });
   }
 }
+function getMessage(req, res) {
+  res.status(200).json({
+    message: "server deployed suceeded",
+  });
+}
 
-module.exports = { createStudent };
+// async function getStudent(req, res) {
+// const student = await Student.find({  });
+// res.status(200).json({
+// message: "sucessful",
+// data: student,
+// });
+// }
+module.exports = { createStudent, getMessage };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Card from "../../components/Card/card";
 import background from "../../assets/background.jpg";
 import Navigation from "../../components/Navigation/Navigation";

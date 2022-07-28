@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "tachyons";
 import "./card.css";
+
 const Card = ({ fullName, email, photoUrl}) => {
+
   const [click, setClick] = useState("ABSCENT");
   const handleClick = () => setClick("PRESENT");
 
@@ -12,6 +14,7 @@ const Card = ({ fullName, email, photoUrl}) => {
         <div style={{ textAlign: 'center'}}>
           <h2>{fullName}</h2>
           <p>{ email }</p>
+
         </div>
         <div style={{textAlign: 'center'}}>
           <button onClick={handleClick} style={{ fontSize: '1rem', padding: '0.7rem 2rem'}}>{click}</button>
